@@ -1,0 +1,55 @@
+/*Leer tres numeros enteros y mostrar
+su producto,
+su division y su
+promedio
+resultado.
+*/
+#include <stdio.h>
+main(){
+//pedir datos
+printf("Ingresa la altura ");
+float altura;
+scanf("%f",&altura);
+printf("Ingresa la base:");
+float base;
+scanf("%f",&base);
+
+
+//Operacioness
+float multiplicacion;
+float area;
+multiplicacion=altura * base ;
+area = altura * base /2;
+
+
+//Mostrar datos
+
+printf("\nEl area de el triangulo  es:%.2f",area);
+}/*Leer tres numeros enteros y mostrar
+su producto,
+su division y su
+promedio
+resultado.
+*/
+#include <stdio.h>
+main(){
+//pedir datos
+printf("Ingresa la altura ");
+float altura;
+scanf("%f",&altura);
+printf("Ingresa la base:");
+float base;
+scanf("%f",&base);
+
+
+//Operacioness
+float multiplicacion;
+float area;
+multiplicacion=altura * base ;
+area = altura * base /2;
+
+
+//Mostrar datos
+
+printf("\nEl area de el triangulo  es:%.2f",area);
+}
