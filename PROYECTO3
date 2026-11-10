@@ -1,0 +1,34 @@
+/*8.Calcular el costo total de un terreno rectangular a partir de su largo, su ancho y el
+precio por m². Mostrar el subtotal, el IVA (16%) y el total.*/
+
+#include<stdio.h>
+
+int main(){
+//Variables para solicitar datos al usuario
+float costototal;
+float largoterreno;
+float anchoterreno;
+float preciom2;
+float subtotal;
+float iva;
+
+printf("Ingresar largo total del terreno:");
+scanf("%f",&largoterreno);
+printf("Ingresar ancho total del terreno:");
+scanf("%f",&anchoterreno);
+printf("Ingresar precio por m2 del terreno:");
+scanf("%f",&preciom2);
+
+//Operaciones para obtener los valores solicitados
+
+subtotal = largoterreno * anchoterreno * preciom2;
+iva = subtotal * 0.16;
+costototal = subtotal + iva;
+
+//Mostrar resultados
+
+printf("El costo subtotal es:%f\n",subtotal);
+printf("El iva es:%f\n",iva);
+printf("El costo total es:%f\n",costototal);
+
+}
