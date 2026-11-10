@@ -1,0 +1,33 @@
+/*7. Leer los dos catetos de un triángulo rectángulo. Calcular la hipotenusa, el
+perímetro y el área.*/
+
+#include<stdio.h>
+
+int main(){
+//Variables para solicitar datos al usuario
+float catetoa;
+float catetob;
+float hipotenusa;
+float perimetro;
+float area;
+
+printf("Ingresar longitud del cateto a :");
+scanf("%f",&catetoa);
+printf("Ingresar lonitud del cateto b :");
+scanf("%f",&catetob);
+
+//Operaciones para calcular los valores solicitados
+
+hipotenusa = (catetoa * catetoa + catetob * catetob);
+perimetro = catetoa + catetob + hipotenusa;
+area = catetoa * catetob /2;
+
+//Mostrar datos
+
+printf("La longitud de la hipotenusa es:%f\n",hipotenusa);
+
+printf("La longitud del perimetro es:%f\n",perimetro);
+
+printf("El area es:%f\n",area);
+
+}
