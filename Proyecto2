@@ -1,0 +1,33 @@
+/*6. Leer el radio y la altura de un cilindro. Calcular y mostrar su área total, su volumen
+y su capacidad en litros (las medidas están en cm).*/
+
+#include<stdio.h>
+
+int main(){
+//Variables para solicitar datos al usuario
+float radio;
+float altura;
+float area;
+float volumen;
+float capacidadenlitros;
+
+printf("Ingresar radio del cilindro:");
+scanf("%f",&radio);
+printf("Ingresar altura del cilindro:");
+scanf("%f",&altura);
+
+//Operaciones para calcular los datos solicitados
+
+area= 2 * 3.1416* radio * (radio + altura);
+volumen = 3.1416 * radio * radio * altura;
+capacidadenlitros = volumen / 1000;
+
+//Mostrar resultados de las operaciones hechas
+
+printf("El area total es:%f\n",area);
+
+printf("El volumen total es:%f\n",volumen);
+
+printf("La capacidad total es:%f\n",capacidadenlitros);
+
+}
