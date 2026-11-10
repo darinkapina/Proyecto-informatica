@@ -1,0 +1,99 @@
+/*5. Dado el costo de una compra y el dinero entregado por el cliente, calcular el
+cambio y desglosarlo en billetes y monedas (500, 200, 100, 50, 20, 10, 5, 2 y 1).*/
+
+#include<stdio.h>
+int main(){
+//Variables para solicitar datos al usuario
+int costocompra;
+int dineroentregado;
+//Variables para poder dar el cambio y desglosarlo en billetes y monedas
+
+int cambio;
+int billetes;
+int monedas;
+
+//variables para registrar las diferentes denominaciones
+
+int billetede500;
+
+int billetede200;
+
+int billetede100;
+
+int billetede50;
+
+int billetede20;
+
+int monedade10;
+
+int monedade5;
+
+int monedade2;
+
+int monedade1;
+
+//Ingresar datos
+
+printf("Ingresar costodecompra :");
+scanf("%d",&costocompra);
+printf("Ingresardineroentregado :");
+scanf("%d",&dineroentregado);
+
+//Operaciones
+
+//Operacion de calculo de cambio
+
+cambio=dineroentregado - costocompra;
+
+//Operaciones de calculo de cantidad de monedas y billetes de diferente enumeracion
+
+billetede500 = cambio / 500;
+cambio = cambio - (billetede500 * 500);
+
+billetede200 = cambio / 200;
+cambio = cambio - (billetede200 * 200);
+
+billetede100 = cambio / 100;
+cambio = cambio - (billetede100 * 100);
+
+billetede50 = cambio / 50;
+cambio = cambio - (billetede50 * 50);
+
+billetede20 = cambio / 20;
+cambio = cambio - (billetede20 * 20);
+
+monedade10 = cambio / 10;
+cambio = cambio - (monedade10 * 10);
+
+monedade5 = cambio / 5;
+cambio = cambio - (monedade5 * 5);
+
+monedade2 = cambio / 2;
+cambio = cambio - (monedade2 * 2);
+
+monedade1 = cambio / 1;
+cambio = cambio - (monedade1 * 1);
+
+//Mostrar datos y ejecutar operaciones matematicas para poder dar el cambio correctamente
+
+printf("El cambio es :%d\n", dineroentregado-costocompra);
+
+printf("Billetes de 500 entregados:%d\n", billetede500);
+
+printf("Billetes de 200 entregados:%d\n", billetede200);
+
+printf("Billetes de 100 entregados:%d\n", billetede100);
+
+printf("Billetes de 50 entregados:%d\n", billetede50);
+
+printf("Billetes de 20 entregados:%d\n", billetede20);
+
+printf("Monedas de 10 entregadas:%d\n", monedade10);
+
+printf("Monedas de 5 entregadas:%d\n", monedade5);
+
+printf("Monedas de 2 entregadas:%d\n", monedade2);
+
+printf("Monedas de 1 entregadas:%d\n", monedade1);
+
+}
