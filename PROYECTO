@@ -1,0 +1,28 @@
+/* Leer el nombre y el apellido de una persona, su año de nacimiento y el año actual.
+Mostrar el nombre en formato “Apellido, Nombre” y su edad.*/
+
+#include<stdio.h>
+int main(){
+int edad;
+int anoactual;
+int anonacimiento;
+char nombre[20];
+char apellido[20];
+//ingresar datos
+printf ("Ingresar anoactual:");
+scanf ("%d", &anoactual);
+printf ("Ingresar anonacimiento:");
+scanf ("%d" ,&anonacimiento);
+printf ("Ingresar nombre:");
+scanf ("%s" ,&nombre);
+printf ("Ingresar apellido:");
+scanf ("%s" ,&apellido);
+
+//Operaciones
+edad=anoactual - anonacimiento;
+
+//Mostrar datos
+printf("Tu apellido es:%s\n",apellido);
+printf("Tu nombre es:%s\n",nombre);
+printf("Tu edad es:%d\n",edad);
+}
